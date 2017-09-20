@@ -1,20 +1,14 @@
-import {ModuleWithProviders, NgModule} from '@angular/core';
-import {CommonModule} from '@angular/common';
+import {NgModule} from '@angular/core';
 import {FormsModule} from '@angular/forms';
 import {OfertasComponent} from './ofertas.component';
-import {RouterModule} from '@angular/router';
-
-const ofertasRouting: ModuleWithProviders = RouterModule.forChild([
-  {
-    path: 'ofertas',
-    component: OfertasComponent
-  }
-]);
+import {CommonModule} from "@angular/common";
+import {OfertasRouting} from "./ofertas.routing";
 
 @NgModule({
   imports: [
-    ofertasRouting,
-    FormsModule
+    CommonModule,
+    FormsModule,
+    OfertasRouting
   ],
   declarations: [
     OfertasComponent
