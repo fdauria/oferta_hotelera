@@ -1,8 +1,8 @@
 import {Component} from '@angular/core';
 
 @Component({
-  templateUrl: './hoteles.html',
-  styleUrls: ['./hoteles.css']
+  templateUrl: './hoteles.component.html',
+  styleUrls: ['./hoteles.component.css']
 })
 export class HotelesComponent {
 }

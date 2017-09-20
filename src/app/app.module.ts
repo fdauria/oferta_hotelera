@@ -4,21 +4,19 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { HttpModule } from '@angular/http';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { LocationStrategy, HashLocationStrategy } from '@angular/common';
-import { AppRoutingModule } from './app-routing.module';
 
 import { AppComponent} from './app.component';
-import { HomeComponent } from './components/home/home.component';
+import {HeaderComponent} from './components/header/header.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    HomeComponent
+    HeaderComponent
   ],
   imports: [
     BrowserModule,
     FormsModule,
     ReactiveFormsModule,
-    AppRoutingModule,
     HttpModule,
     BrowserAnimationsModule
   ],
